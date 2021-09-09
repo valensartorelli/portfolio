@@ -60,6 +60,12 @@ a {
   margin-bottom: 35px;
 }
 
+.carousel-inner{
+  -webkit-box-shadow: 3px 1px 6px 1px rgb(0 0 0 / 30%);
+  box-shadow: 3px 1px 6px 1px rgb(0 0 0 / 30%);
+  border: 0;
+}
+
 .skills{
   background-color: #DADED4;
 }
@@ -150,6 +156,10 @@ footer{
   background-color: #3C403D;
   padding: 60px 0;
   color: #ffffff;
+}
+
+footer.module{
+  min-height: 350px;
 }
 
 footer .container{
