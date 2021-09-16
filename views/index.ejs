@@ -12,36 +12,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3284ec92d7.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="/javascripts/bootstrap.js">
   </head>
   <body>
     <header>
-      <div class="container sop-header">
-        <div class="logo">
-          <img src="/images/logo-valen-sartorelli-verde.png" alt="Valentina Sartorelli Full Stack Developer" width="200">
-        </div>
-        <nav class="sop-nav">
-          <ul>
-            <li>
-              <a href="#presentation" title="About me">
-                Me
-              </a>
-            </li>
-            <li>
-              <a href="#skills" title="My Skills">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#projects" title="Latest projects">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#get-in-touch" title="Let's get in touch!">
-                Get in touch
-              </a>
-            </li>
-          </ul>
+      <div class="sop-header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container">
+            <a class="navbar-brand logo" href="index.html" title="The Sinapi Team">
+              <img src="/images/logo-valen-sartorelli-verde.png" alt="Valentina Sartorelli Full Stack Developer" width="200">
+            </a>
+            <button class="navbar-toggler collapsed" id="mobile-menu-button" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+            <div class="sop-nav collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a href="#presentation" title="About me">
+                      Me
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#skills" title="My Skills">
+                      Skills
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#projects" title="Latest projects">
+                      Projects
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#get-in-touch" title="Let's get in touch!">
+                      Get in touch
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -94,134 +102,136 @@
 
       <a id="skills"></a>
       <section class="module skills">
-        <div class="container d-flex">
-          <h2>Skills
-            <div class="sub"></div>
-          </h2>
-          <div class="card-holder">
-            <div class="card">
-              <div class="card-body">
-                <i class="fab fa-html5"></i>
-                <h5 class="card-title">HTML</h5>
+        <div class="container">
+          <div class="d-flex">
+            <h2>Skills
+              <div class="sub"></div>
+            </h2>
+            <div class="card-holder">
+              <div class="card">
+                <div class="card-body">
+                  <i class="fab fa-html5"></i>
+                  <h5 class="card-title">HTML</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-css3-alt"></i>
-              <div class="card-body">
-                <h5 class="card-title">CSS</h5>
+  
+              <div class="card">
+                <i class="fab fa-css3-alt"></i>
+                <div class="card-body">
+                  <h5 class="card-title">CSS</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-bootstrap"></i>
-              <div class="card-body">
-                <h5 class="card-title">Bootstrap</h5>
+  
+              <div class="card">
+                <i class="fab fa-bootstrap"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Bootstrap</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-js-square"></i>
-              <div class="card-body">
-                <h5 class="card-title">JavaScript</h5>
+  
+              <div class="card">
+                <i class="fab fa-js-square"></i>
+                <div class="card-body">
+                  <h5 class="card-title">JavaScript</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-node-js"></i> 
-              <div class="card-body">
-                <h5 class="card-title">Node.js</h5>
+  
+              <div class="card">
+                <i class="fab fa-node-js"></i> 
+                <div class="card-body">
+                  <h5 class="card-title">Node.js</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-node-js"></i> 
-              <div class="card-body">
-                <h5 class="card-title">Express</h5>
+  
+              <div class="card">
+                <i class="fab fa-node-js"></i> 
+                <div class="card-body">
+                  <h5 class="card-title">Express</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fas fa-database"></i> 
-              <div class="card-body">
-                <h5 class="card-title">MySQL</h5>
+  
+              <div class="card">
+                <i class="fas fa-database"></i> 
+                <div class="card-body">
+                  <h5 class="card-title">MySQL</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-git"></i>
-              <div class="card-body">
-                <h5 class="card-title">GIT</h5>
+  
+              <div class="card">
+                <i class="fab fa-git"></i>
+                <div class="card-body">
+                  <h5 class="card-title">GIT</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fas fa-asterisk"></i>
-              <div class="card-body">
-                <h5 class="card-title">Scrum</h5>
+  
+              <div class="card">
+                <i class="fas fa-asterisk"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Scrum</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-react"></i>
-              <div class="card-body">
-                <h5 class="card-title">React</h5>
+  
+              <div class="card">
+                <i class="fab fa-react"></i>
+                <div class="card-body">
+                  <h5 class="card-title">React</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fas fa-image"></i> 
-              <div class="card-body">
-                <h5 class="card-title">Photoshop</h5>
+  
+              <div class="card">
+                <i class="fas fa-image"></i> 
+                <div class="card-body">
+                  <h5 class="card-title">Photoshop</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fas fa-bezier-curve"></i>
-              <div class="card-body">
-                <h5 class="card-title">Illustrator</h5>
+  
+              <div class="card">
+                <i class="fas fa-bezier-curve"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Illustrator</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-figma"></i>
-              <div class="card-body">
-                <h5 class="card-title">Figma</h5>
+  
+              <div class="card">
+                <i class="fab fa-figma"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Figma</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-wordpress"></i>
-              <div class="card-body">
-                <h5 class="card-title">Wordpress</h5>
+  
+              <div class="card">
+                <i class="fab fa-wordpress"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Wordpress</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-mailchimp"></i>
-              <div class="card-body">
-                <h5 class="card-title">Mailchimp</h5>
+  
+              <div class="card">
+                <i class="fab fa-mailchimp"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Mailchimp</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-salesforce"></i>
-              <div class="card-body">
-                <h5 class="card-title">Salesforce</h5>
+  
+              <div class="card">
+                <i class="fab fa-salesforce"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Salesforce</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fas fa-mail-bulk"></i>
-              <div class="card-body">
-                <h5 class="card-title">Marketo</h5>
+  
+              <div class="card">
+                <i class="fas fa-mail-bulk"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Marketo</h5>
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <i class="fab fa-trello"></i>
-              <div class="card-body">
-                <h5 class="card-title">Trello</h5>
+  
+              <div class="card">
+                <i class="fab fa-trello"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Trello</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -324,6 +334,7 @@
         </section>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
