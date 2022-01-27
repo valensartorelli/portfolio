@@ -269,6 +269,30 @@ li.nav-item {
   color: #3C403D;
 }
 
+.cta-watch {
+  background-color: #39603D;
+  color: #ffffff;
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px 5px;
+  width: 70%;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.cta-watch:hover{
+  color: #FFFFFF;
+  background-color: #3C403D;
+}
+
+
 footer{
   background-color: #3C403D;
   padding: 60px 0;
